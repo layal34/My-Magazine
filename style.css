@@ -1,0 +1,38 @@
+/* تصميم الصفحة الرئيسية */
+.main-header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/header-bg.jpg') no-repeat center center/cover;
+    color: white;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.featured-articles .card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.featured-articles .card:hover {
+    transform: scale(1.05);
+}
+
+.latest-articles .article-box {
+    transition: transform 0.3s ease;
+    background-color: #fff;
+}
+
+.latest-articles .article-box:hover {
+    transform: translateY(-10px);
+    background-color: #f8f9fa;
+}
