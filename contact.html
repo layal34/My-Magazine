@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - مجلة المعرفة</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f9fc;
+        }
+        .navbar {
+            background-color: #0047ab;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .nav-link {
+            color: #ffffff !important;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #0047ab;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        form .form-control {
+            border: 1px solid #0047ab;
+        }
+        form button {
+            background-color: #0047ab;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./image/logo2.jpg" alt="شعار المجلة">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="articles.html">المقالات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">عن المجلة</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- محتوى الصفحة -->
+    <div class="container py-5">
+        <h1 class="text-center mb-4" style="color: #0047ab;">اتصل بنا</h1>
+        <p class="text-center mb-4">لديك استفسار؟ اترك لنا رسالة وسنكون على اتصال قريبًا!</p>
+        <form id="ContactForm" action="done.html" onsubmit="validateForm(event)" method="post" class="mx-auto" style="max-width: 600px;">
+            <div class="mb-3">
+                <label for="name" class="form-label">الاسم</label>
+                <input type="text" class="form-control" id="name" name="name" >
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="email" name="email" >
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">الرسالة</label>
+                <textarea class="form-control" id="message" name="message" rows="5" ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">إرسال</button>
+        </form>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <p>حقوق النشر © 2024 مجلتي | جميع الحقوق محفوظة</p>
+    </footer>
+    
+    <script>
+    
+     
+        function validateForm(event) {
+            
+            event.preventDefault();// منع إرسال النموذج افتراضيًا
+
+            // الحصول على الحقول
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // التحقق من الحقول
+            if (name === "") {
+                alert("يرجى إدخال اسمك.");
+                return false;
+            }
+
+            if (email === "") {
+                alert("يرجى إدخال بريدك الإلكتروني.");
+                return false;
+            }
+
+            if (message === "") {
+                alert("يرجى إدخال الرسالة.");
+                return false;
+            }
+
+            //إذا كانت جميع الحقول صحيحة
+            document.getElementById("ContactForm").submit();
+        }
+    </script>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

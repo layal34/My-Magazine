@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية - مجلتي</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f8fc;
+        }
+        .navbar {
+            background-color: #0047ab;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .nav-link {
+            color: #ffffff !important;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('./image/photo2.jpg') center center/cover no-repeat;
+            height: 400px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-top: 15px;
+        }
+        .most-read img, .latest-articles img {
+            border-radius: 10px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #0047ab;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/logo2.jpg" alt="شعار المجلة">
+                <span class="text-white fs-2 me-3">مجلتي</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto m-auto fs-4 ">
+                    <li class="nav-item ms-5"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item ms-5"><a class="nav-link" href="articles.html">المقالات</a></li>
+                    <li class="nav-item ms-5"><a class="nav-link" href="about.html">عن المجلة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- البطل -->
+    <div class="hero">
+        <div>
+            <h1>مرحباً بكم في مجلتي</h1>
+            <p>منصة تجمع بين الثقافة، التكنولوجيا، الصحة، والرياضة</p>
+        </div>
+    </div>
+
+    <!-- المقالات الأكثر قراءة -->
+    <div class="container py-5">
+        <h2 class="text-center mb-4" style="color: #0047ab;">المقالات الأكثر قراءة</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/water.jpeg" class="card-img-top most-read" alt="مقال 1" width="350" height="250">
+                    <div class="card-body">
+                        <h5 class="card-title">أهمية شرب الماء: أساس الصحة والعافية؟</h5>
+                        <p class="card-text">يُعتبر الماء أساس الحياة، وهو ضروري للعديد من وظائف الجسم الحيوية</p>
+                        <a href="article1.html" class="btn btn-primary">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/ai.jpeg" class="card-img-top most-read" alt="مقال 2" width="350" height="250">
+                    <div class="card-body">
+                        <h5 class="card-title">الذكاء الاصطناعي: ثورة صامتة تغير العالم</h5>
+                        <p class="card-text">يشهد العالم اليوم تطوراً سريعاً في مجال الذكاء الاصطناعي (AI)، وهو فرع من علوم الحاسوب يهدف إلى تطوير أنظمة قادرة على محاكاة القدرات الذهنية البشرية</p>
+                        <a href="article2.html" class="btn btn-primary">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/sport.jpg" class="card-img-top most-read" alt="مقال 3" width="350" height="250">
+                    <div class="card-body">
+                        <h5 class="card-title">الرياضة: أكثر من مجرد لعبة، هي أسلوب حياة</h5>
+                        <p class="card-text">ممارسة الرياضة ليست مجرد نشاط بدني، بل هي أسلوب حياة يساعد على تحسين الصحة الجسدية والعقلية</p>
+                        <a href="article3.html" class="btn btn-primary">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- أحدث المقالات -->
+    <div class="container py-5">
+        <h2 class="text-center mb-4" style="color: #0047ab;">أحدث المقالات</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="./image/kids.jpeg" alt="صورة مقال" class="latest-articles">
+                <p class="mt-2 text-center">اهمية القراءة والمطالعة لدى الاطفال</p>
+            </div>
+            <div class="col-md-3">
+                <img src="./image/canser.jpeg" alt="صورة مقال" class="latest-articles">
+                <p class="mt-2 text-center">اهمية الكشف المبكر عن سرطان الثدي</p>
+            </div>
+            <div class="col-md-3">
+                <img src="./image/success.jpeg" alt="صورة مقال" class="latest-articles">
+                <p class="mt-2 text-center">بعض النصائح لتنظيم الوقت</p>
+            </div>
+            <div class="col-md-3">
+                <img src="./image/apples.jpeg" alt="صورة مقال" class="latest-articles">
+                <p class="mt-2 text-center">فوائد التفاح الصحية و الغذائية</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <p>حقوق النشر © 2024 مجلتي | جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
